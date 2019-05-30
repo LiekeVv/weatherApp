@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mijn Weerbericht</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:100,300,400" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style/reset.css">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+    </head>
+    <body>
+
+
+        <div class="container">
+            <div class="search">
+                <!--Dit is het zoekveld met de standaardwaarde van Eindhoven. -->
+                <input class="search-input" id="searchField" type="text" value="Eindhoven">
+                <!--Dit is de zoek knop waarmee de waarde uit het zoekveld wordt doorgegeven-->
+                <span class="search-button" id="searchButton"><img src="images/icons/search.png"> </span>
+            </div>
+
+            <div class="box">
+                <div class="box-today">
+                    <!--Dit is het plaatje die bij het weer van dat moment hoort-->
+                    <img class="box-image" id="image" src="">
+
+                    <!--Dit laat de temperatuur van dat moment zien-->
+                    <div class="box-temperature">
+                        <!--Om het graden celcius erachter te zetten heb zit het in een span-->
+                        <span id="temperature"></span> &#8451
+                    </div>
+
+                    <!--Hier wordt de stad ingeladen-->
+                    <div class="box-city" id="city"></div>
+                </div>
+
+                <!--Hier wordt de voorspelling van de komende 5 dagen ingeladen-->
+                <div class="box-forecast"  id="forecast">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
